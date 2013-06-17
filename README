@@ -1,0 +1,20 @@
+Florea Alexandru - Ionut
+313CA
+Tema4 - Structuri de date
+
+	Metoda aleasa de mine este cea prezentata in laboratorul dedicat acestei
+teme. Astefel, mi-am facut o clasa 'Trie' care contine un vector de fii, un
+container, acesta fiind un treap, si o valoare bool care imi indica daca in 
+nodul respectiv se termina un cuvant sau nu. Metoda de adaugare a unui cuvant
+este recursiva, scot cate o litera si o transform in numarul tastei(folosind
+o functie implementat de mine) apoi elimin litera din cuvant si apelez iar 
+functia cu ce a mai ramas din cuvant. Conditia de iesire din recursivitate 
+este ca primul caracter al cuvantului sa fie terminatorul de sir '\0'; apoi 
+daca nu exista containerul acolo ii creez, iar daca exista adaug cuvantul in 
+el.
+	Metoda de care intoarce cuvantul asociat unui sir de taste este deasemeni 
+recursiva si foarte asemanatoare cu cea de inserare. Conditia de iesire din 
+recursivitate este ca primul caracter al sirului sa fie terminatorul de sir.
+Verific daca se afla cuvinte in trie, iar daca da il caut in container pe cel
+corespunzator. Il sterg din container, ii incrementez valoarea si il adaug 
+inapoi.
